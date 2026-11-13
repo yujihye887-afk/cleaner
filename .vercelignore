@@ -1,12 +1,14 @@
-# 배포에는 쓰는 사람에게 필요한 것만 올린다 — 정리기 화면 · rules/ · data/
+# 배포에는 쓰는 사람에게 필요한 것만 올린다 — 정리기 화면 · rules/ · data/ (허용 목록: 나머지는 전부 뺀다)
+# ⚠ Vercel 은 한글 이름의 파일 · 폴더를 이 목록으로 가려내지 못한다(rules/ · data/ 가 빠지고, 거부 목록으로 바꾸면 정리/ · 진단/ 이 올라간다).
+#   그래서 실제 배포는 필요한 파일만 따로 모은 폴더에서 한다 — README 의 «배포» 참고
 *
 !index.html
 !style.css
 !app.js
 !clean.js
-!lib/
-!lib/*
-!rules/
-!rules/*
-!data/
-!data/*
+!lib
+!lib/**
+!rules
+!rules/**
+!data
+!data/**
