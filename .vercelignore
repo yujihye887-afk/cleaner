@@ -1,0 +1,12 @@
+# 배포에는 쓰는 사람에게 필요한 것만 올린다 — 정리기 화면 · rules/ · data/
+*
+!index.html
+!style.css
+!app.js
+!clean.js
+!lib/
+!lib/*
+!rules/
+!rules/*
+!data/
+!data/*
